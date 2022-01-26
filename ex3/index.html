@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Link Shortener</title>
+  </head>
+  <body>
+    <div class="overlay hidden" id="overlay">
+      <div class="circle"></div>
+    </div>
+    <div class="introduction-container">
+      <h2>Link Shortener</h2>
+      <p>
+        Paste your link here we will provide you with a shorter version that you
+        will be able to use anywhere.
+      </p>
+
+      <div class="input-container">
+        <input
+          id="link-input"
+          type="text"
+          placeholder="Paste your link here"
+          required
+        />
+        <button type="button">Short it</button>
+      </div>
+    </div>
+
+    <div class="result-container" id="result-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

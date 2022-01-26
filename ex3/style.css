@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.introduction-container {
+  width: 100%;
+  height: 180px;
+  background-color: #7eddf2;
+  padding: 20px 0;
+  position: relative;
+}
+
+.introduction-container h2,
+.introduction-container p {
+  text-align: center;
+}
+.introduction-container p {
+  padding-top: 20px;
+}
+
+.input-container {
+  width: 50%;
+  height: 50px;
+  background-color: #ffc876;
+  padding: 20px;
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container input {
+  height: 30px;
+  width: 60%;
+  padding: 8px;
+  margin: auto;
+  margin-top: -10px;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-container button {
+  height: 30px;
+  width: 80px;
+  border: none;
+  outline: none;
+  background-color: #ff6f71;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.input-container button:hover {
+  cursor: pointer;
+  background-color: #f33538;
+}
+
+.result-container {
+  width: 23%;
+  height: auto;
+  margin: 5% auto;
+}
+.result-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.result {
+  border: 1px solid black;
+  margin-bottom: 20px;
+  padding: 8px;
+  cursor: text;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 16, 16, 0.3);
+  z-index: 999;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border-top-color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
